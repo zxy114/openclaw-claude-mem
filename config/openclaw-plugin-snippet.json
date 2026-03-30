@@ -1,0 +1,11 @@
+{
+  "_comment": "Add these fields to your ~/.openclaw/openclaw.json",
+  "plugins": {
+    "allow": ["telegram", "brave", "claude-mem", "openclaw-weixin"],
+    "entries": {
+      "claude-mem": {
+        "enabled": true
+      }
+    }
+  }
+}
