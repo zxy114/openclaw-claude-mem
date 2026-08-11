@@ -1,7 +1,20 @@
-# OpenClaw 持久记忆系统 / Persistent Memory System for OpenClaw
+# Persistent Memory for OpenClaw / OpenClaw 持久记忆系统
 
-> **claude-mem + GLM 代理** — 让 OpenClaw 跨会话记住一切
-> **claude-mem + GLM proxy** — Give OpenClaw persistent memory across sessions
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Shell](https://img.shields.io/badge/shell-bash-121011.svg?logo=gnu-bash&logoColor=white)](install.sh)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg)](#前置条件--prerequisites)
+
+**One command gives OpenClaw memory that survives across sessions.**
+
+OpenClaw starts every conversation from zero. This installer wires in
+[`claude-mem`](https://github.com/thedotmack/claude-mem) — which speaks the Anthropic
+protocol and targets Claude Code — and ships an **Anthropic → OpenAI translation proxy**
+so the summarization step can run on **any OpenAI-compatible model** (GLM, DeepSeek,
+local models, …) instead of requiring a paid Anthropic API key just to write memories.
+
+> 一条命令让 OpenClaw 拥有跨会话记忆。
+> 内置 Anthropic → OpenAI 协议转换代理，记忆生成可跑在任意 OpenAI 兼容模型上，
+> 不必为了写摘要而单独买 Anthropic API。
 
 ---
 
@@ -118,8 +131,8 @@ Key features:
 
 ```bash
 # 克隆此仓库 / Clone this repo
-git clone https://github.com/YOUR_USERNAME/openclaw-mem-skill.git
-cd openclaw-mem-skill
+git clone https://github.com/zxy114/openclaw-claude-mem.git
+cd openclaw-claude-mem
 
 # 一键安装 / One-command install
 bash install.sh
